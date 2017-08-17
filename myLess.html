@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>了解Less</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<style>
+			.nav-tabs{
+				margin-bottom: 15px;
+			}
+			
+			.jumbotron{
+				color:#FFFFFF !important;
+				background-color: #5B4181;
+			}
+			
+			.jumbotron>h1{
+				font-weight: bold;
+			}
+			
+			pre{
+				text-align: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>组件</h1>
+				<p>无数可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能。</p>
+			</div>
+			<ul id="myTab" class="nav nav-tabs">
+				<li class="active">
+					<a href="#pageHeader" data-toggle="tab">页头</a>
+				</li>
+				<li>
+					<a href="#thumbNail" data-toggle="tab">缩略图</a>
+				</li>
+				<li class="dropdown">
+					<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">
+						警告框<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+						<li>
+							<a href="#alertDismissible1" tabindex="-1" data-toggle = "tab">可关闭的警告框</a>
+						</li>
+						<li>
+							<a href="#alertLink1" tabindex="-1" data-toggle = "tab">警告框中的链接</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade in active" id="pageHeader">
+					<p>
+						页头组件能够为 h1 标签增加适当的空间，并且与页面的其他部分形成一定的分隔。它支持 h1 标签内内嵌 small 元素的默认效果，还支持大部分其他组件（需要增加一些额外的样式）。
+						Example page header Subtext for header
+					</p>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h1>Example page header <small>Subtext for header</small></h1>
+						</div>
+						<div class="panel-footer">
+						&lt;div class="page-header"&gt;<br/>
+  						&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Example page header &lt;small&gt;Subtext for header&lt;/small&gt;&lt;/h1&gt;<br/>
+						&lt;/div&gt;
+						</div>
+					</div>
+
+
+
+				</div>
+				<div class="tab-pane fade" id="thumbNail">
+					<h3>通过缩略图组件扩展 Bootstrap 的 栅格系统，可以很容易地展示栅格样式的图像、视频、文本等内容。</h3>
+					<p>如果你想实现一个类似 Pinterest 的页面效果（不同高度和/宽度的缩略图顺序排列）的话，你需要使用一个第三方插件，比如 Masonry、Isotope 或 Salvattore。</p>
+					<h2>默认样式的实例</h2>
+					<p>Boostrap 缩略图的默认设计仅需最少的标签就能展示带链接的图片。</p>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-xs-6 col-md-3">
+									<a href="#" class="thumbnail">
+										<img src="img/1.jpeg" alt="...">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer"><br/>
+							<code>&lt;div class="row"&gt;</code><br/>
+								<code>&lt;div class="col-xs-6 col-md-3"&gt;</code><br/>
+									<code>&lt;a href="#" class="thumbnail"&gt;</code><br/>
+										<code>&lt;img src="img/1.jpeg" alt="..."&gt;</code><br/>
+									<code>&lt;/a&gt;</code><br/>
+								<code>&lt;/div&gt;</code><br/>
+							<code>&lt;/div&gt;</code><br/>
+						</div>
+					</div>
+
+				</div>
+				<div class="tab-pane fade" id="alertDismissible1">
+					<p>
+						为警告框添加一个可选的 .alert-dismissible 类和一个关闭按钮。
+						依赖警告框 JavaScript 插件
+如果需要为警告框组件提供关闭功能，请使用 jQuery 警告框插件。
+Warning! Better check yourself, you're not looking too good.
+					</p>
+					<div class="alert alert-warning alert-dismissible" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong>Warning!</strong> Better check yourself, you're not looking too good.
+					</div>
+					<p>
+						确保在所有设备上的正确行为
+务必给 <button> 元素添加 data-dismiss="alert" 属性。
+					</p>
+				</div>
+				<div class="tab-pane fade" id="alertLink1">
+					<p>
+						用 .alert-link 工具类，可以为链接设置与当前警告框相符的颜色。
+					</p>
+					<div class="alert alert-success" role="alert">
+						<a href="#" class="alert-link">...</a>
+					</div>
+					<div class="alert alert-info" role="alert">
+						<a href="#" class="alert-link">...</a>
+					</div>
+					<div class="alert alert-warning" role="alert">
+						<a href="#" class="alert-link">...</a>
+					</div>
+					<div class="alert alert-danger" role="alert">
+						<a href="#" class="alert-link">...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
