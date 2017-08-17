@@ -4,7 +4,7 @@ h1,h3,p,a,button{
 .side-nav{
 	position: fixed;
 	top: 45%;
-	right: 20px;
+	right: 80px;
 	z-index: 1;
 }
 .side-nav ul.nav-side-nav{
@@ -31,8 +31,10 @@ h1,h3,p,a,button{
 }
 .onepage,
 .threepage,
-#fourpage,
 #fivepage{
+	height: 650px;
+}
+#fourpage{
 	height: 650px;
 }
 .onepage-bg{
@@ -61,10 +63,11 @@ h1,h3,p,a,button{
 }
 .twopage{
 	padding: 40px 0 0 2px;
-	background-image: url(../img/twopage-bg.jpg);
+	background-color: darkseagreen;
+/*	background-image: url(../img/twopage-bg.jpg);
 	background-position: center center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 #twopage{
 	height: 700px;
@@ -157,7 +160,7 @@ h1,h3,p,a,button{
 }
 #threepagebg{
 	/*background-image: url(../img/4.jpeg);*/
-	background-color: cornsilk;
+	background-color:silver;
 }
 .threepagecontent{
 	width: 100%;
@@ -227,7 +230,8 @@ h1,h3,p,a,button{
 	background-size: cover;
 }
 #fivepage{
-	background-image: url(../img/fourpage-bg.jpg);
+	/*background-image: url(../img/fourpage-bg.jpg);*/
+	background-color: sandybrown;
 }
 .footertext{
 	margin-top: 55px;
